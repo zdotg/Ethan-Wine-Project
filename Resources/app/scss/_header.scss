@@ -1,0 +1,55 @@
+.header {
+    
+    nav {
+        padding: 0;
+    }
+
+    .title {
+        font-size: 1rem;
+        padding: 30px;
+        background-color: aqua;
+        float: left;
+        
+        
+    }
+
+    &__menu {
+        > span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: darkBlue;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        } 
+    }
+    &__links{
+        
+        a {
+            font-size: 18px;
+            padding: 0;
+            transition: color 200ms ease-in-out;
+            position: relative;
+            top: 30px;
+            left: 100px;
+            
+
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &:hover {
+                color: $darkBlue;
+            }
+        }
+    }
+
+    &__cta {
+        font-size: $font-sm;
+        position: relative;
+        top: 20px;
+        right: 60px;
+    }
+}    
